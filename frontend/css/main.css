@@ -2,6 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .1s;
+}
+
+.nav-btt:hover {
+    font-size: large;
+}
+
+#footer-btt:hover {
+    font-size: large;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+#open-modal:hover {
+    font-size: large;
+}
+
+#modal-back:hover {
+    background-color: #0a1033;
+}
+
+#modal-submit:hover {
+    background-color: #0a1033;
+    
 }
 
 body {
