@@ -91,7 +91,7 @@ a {
 /* modelo 1: azul à esquerda */
 .feature-left {
     display: flex !important;
-    flex-direction: row !important;
+    justify-content: flex-start !important;
     border: 2px solid #0a1033;
     border-radius: 24px;
     overflow: hidden;
@@ -103,7 +103,7 @@ a {
 /* modelo 2: azul à direita */
 .feature-right {
     display: flex !important;
-    flex-direction: row-reverse !important;
+    justify-content: flex-end !important;
     border: 2px solid #0a1033;
     border-radius: 24px;
     overflow: hidden;
