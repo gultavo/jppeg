@@ -96,7 +96,7 @@ a {
     border-radius: 24px;
     overflow: hidden;
     width: 100%;
-    max-width: 1000px;
+    max-width: 52vw;
     aspect-ratio: 3/1;
     padding: 16px;
 }
@@ -108,7 +108,7 @@ a {
     border-radius: 24px;
     overflow: hidden;
     width: 100%;
-    max-width: 1000px;
+    max-width: 52vw;
     aspect-ratio: 3/1;
     padding: 16px;
 }
@@ -135,6 +135,7 @@ a {
     align-items: center;
     justify-content: center;
     color: #fff;
+    border-radius: 5%;
     font-size: clamp(0.85rem, 3vw, 1.1rem);
     text-align: center;
 }
@@ -144,7 +145,7 @@ a {
 .feature-image {
     background-color: #ffffff;
     min-height: 200px;
-    border: 2px dashed #ccc;
+    border: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
