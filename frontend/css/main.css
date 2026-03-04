@@ -21,6 +21,10 @@
     font-size: large;
 }
 
+.img-devs {
+    border-radius: 100%;
+}
+
 button:hover {
     cursor: pointer;
 }
