@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,105 @@
         <title>JPPEG</title>
     </head>
     <body>
-        <h1>JPPEG</h1>
-        <p>Welcome to the JPPEG website!</p>
+        <!-- header -->
+        <header class="site-header">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="../images/logojppeg 1.png" alt="JPPEG logo" />
+                </a>
+                <nav class="site-nav">
+                    <a href="sobre_nos.html">Sobre nós</a>
+                    <a href="#contratar">Contratar</a>
+                </nav>
+            </div>
+        </header>
+        <script src="../js/modal.js"></script>
+
+        <!-- hero / masthead -->
+        <section class="hero">
+            <div class="hero-content">
+                <img src="../images/logojppeg 1.png" alt="JPPEG logo" class="hero-logo" />
+                <p class="tagline">A peça que faltava na sua gestão</p>
+            </div>
+        </section>
+
+        <!-- features cards -->
+        <section class="features">
+            <div class="feature-left">
+                <div class="feature-text blue-bg">
+                    <p>Precisa de um <strong>sistema</strong><br>para seu <strong>negócio</strong>?</p>
+                </div>
+                <div class="feature-image">
+                    <!-- placeholder for image -->
+                </div>
+            </div>
+            <div class="feature-right">
+                <div class="feature-image">
+                    <!-- placeholder for image -->
+                </div>
+                <div class="feature-text blue-bg">
+                    <p>Pare de perder <strong>tempo</strong><br>com <strong>processos</strong> manuais e <strong>automatize</strong> sua rotina.</p>
+                </div>
+            </div>
+            <div class="feature-left">
+                <div class="feature-text blue-bg">
+                    <p>Transforme a gestão do seu negócio com <strong>apenas um clique</strong>.</p>
+                </div>
+                <div class="feature-image">
+                    <!-- placeholder for image -->
+                </div>
+            </div>
+        </section>
+
+        <!-- call to action -->
+        <section class="cta">
+            <h2>Quero transformar meu negócio</h2>
+            <a href="#" id="open-modal" class="button primary">Comece agora</a>
+        </section>
+
+        <!-- footer cards -->
+        <section class="logo-cards">
+            <div class="card">J</div>
+            <div class="card">P</div>
+            <div class="card">P</div>
+            <div class="card">E</div>
+            <div class="card">G</div>
+        </section>
+
+        <!-- modal overlay (login / cadastro) -->
+        <div class="modal-overlay" id="modal" aria-hidden="true">
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <button class="modal-close" id="modal-close" aria-label="Fechar">×</button>
+                <div class="modal-inner">
+                    <div class="modal-left">
+                        <h3 id="modal-title">Quer transformar seu negócio?</h3>
+                        <p>Cadastre-se e entre em contato com nossa equipe de profissionais!</p>
+                        <button class="button secondary" id="modal-back">Voltar</button>
+                    </div>
+                    <div class="modal-right">
+                        <label for="email">Email</label>
+                        <input id="email" class="input" type="email" placeholder="seu@email.com" />
+
+                        <label for="password">Senha</label>
+                        <input id="password" class="input" type="password" placeholder="Senha" />
+
+                        <button class="button primary" id="modal-submit">Cadastre-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <a href="#" class="logo footer-logo">
+                    <img src="../images/logojppeg 1.png" alt="JPPEG logo" />
+                </a>
+                <nav class="site-nav">
+                    <a href="sobre_nos.html">Sobre nós</a>
+                    <a href="#contratar">Contratar</a>
+                </nav>
+            </div>
+        </footer>
     </body>
 </html>
