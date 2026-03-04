@@ -1,0 +1,105 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--dark) 0%, #1a237e 50%, var(--primary) 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px;
+}
+
+/* Decorative floating shapes */
+.hero__bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.08;
+    background: var(--white);
+    pointer-events: none;
+}
+
+.hero__bg-shape--1 {
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    right: -100px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero__bg-shape--2 {
+    width: 250px;
+    height: 250px;
+    bottom: -60px;
+    left: -60px;
+    animation: float 8s ease-in-out infinite 1s;
+}
+
+.hero__bg-shape--3 {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 60%;
+    animation: float 7s ease-in-out infinite 0.5s;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero__logo {
+    max-width: min(500px, 80vw);
+    height: auto;
+    margin: 0 auto 24px;
+    filter: brightness(0) invert(1);
+    drop-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.hero__tagline {
+    font-size: clamp(1.1rem, 3vw, 1.6rem);
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+}
+
+.hero__tagline strong {
+    color: var(--white);
+    font-weight: 800;
+}
+
+.hero__badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 10px 24px;
+    border-radius: var(--radius-xl);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 320px;
+        padding: 60px 20px;
+    }
+
+    .hero__logo {
+        max-width: 70vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 260px;
+        padding: 48px 16px;
+    }
+}

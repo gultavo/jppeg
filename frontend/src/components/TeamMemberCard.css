@@ -1,0 +1,98 @@
+.team-card {
+    display: flex;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid rgba(10, 16, 51, 0.08);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(70, 70, 255, 0.15);
+}
+
+.team-card--reverse {
+    flex-direction: row-reverse;
+}
+
+.team-card__info {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 32px;
+    background: linear-gradient(135deg, var(--primary) 0%, #5c5cff 100%);
+}
+
+.team-card__name-area {
+    text-align: center;
+}
+
+.team-card__name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+}
+
+.team-card__role {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 4px 14px;
+    border-radius: var(--radius-xl);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.team-card__photo-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background: linear-gradient(135deg, #f0f2ff 0%, var(--bg) 100%);
+}
+
+.team-card__photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--white);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.team-card:hover .team-card__photo {
+    transform: scale(1.06);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+
+    .team-card,
+    .team-card--reverse {
+        flex-direction: column;
+    }
+
+    .team-card__info {
+        padding: 32px 24px;
+    }
+
+    .team-card__photo-wrapper {
+        padding: 24px;
+    }
+
+    .team-card__photo {
+        width: 130px;
+        height: 130px;
+    }
+}

@@ -1,0 +1,14 @@
+.home-features {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 60px 24px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .home-features {
+        padding: 40px 16px;
+        gap: 20px;
+    }
+}

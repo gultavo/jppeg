@@ -1,0 +1,74 @@
+.letter-cards {
+    padding: 60px 24px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.letter-cards__grid {
+    display: flex;
+    gap: clamp(12px, 2vw, 20px);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.letter-cards__card {
+    background: linear-gradient(145deg, var(--dark) 0%, var(--dark-lighter) 100%);
+    color: var(--white);
+    width: clamp(100px, 15vw, 160px);
+    height: clamp(140px, 22vw, 220px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+}
+
+.letter-cards__card:hover {
+    transform: translateY(-8px) rotateY(5deg);
+    box-shadow: var(--shadow-lg), 0 0 40px rgba(70, 70, 255, 0.2);
+}
+
+.letter-cards__letter {
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(180deg, var(--white) 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Shine overlay on hover */
+.letter-cards__shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.08),
+            transparent);
+    transition: left 0.5s ease;
+}
+
+.letter-cards__card:hover .letter-cards__shine {
+    left: 100%;
+}
+
+@media (max-width: 640px) {
+    .letter-cards {
+        padding: 40px 16px 60px;
+    }
+
+    .letter-cards__card {
+        width: 70px;
+        height: 100px;
+    }
+}

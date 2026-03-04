@@ -1,0 +1,89 @@
+.cta {
+    text-align: center;
+    padding: 80px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(70, 70, 255, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.cta__inner {
+    position: relative;
+    z-index: 2;
+}
+
+.cta__title {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 800;
+    color: var(--dark);
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+
+.cta__subtitle {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    max-width: 480px;
+    margin: 0 auto 32px;
+}
+
+.cta__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 16px 36px;
+    border-radius: var(--radius-xl);
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta__button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cta__button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-glow);
+}
+
+.cta__button:hover::before {
+    opacity: 1;
+}
+
+.cta__button span,
+.cta__button svg {
+    position: relative;
+    z-index: 1;
+}
+
+.cta__button:hover svg {
+    transform: translateX(4px);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 640px) {
+    .cta {
+        padding: 60px 20px;
+    }
+
+    .cta__button {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+}
