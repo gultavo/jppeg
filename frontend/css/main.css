@@ -9,6 +9,14 @@
     font-size: large;
 }
 
+.tagline {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#span-nav {
+    color: white;
+}
+
 #footer-btt:hover {
     font-size: large;
 }
@@ -459,7 +467,8 @@ a {
         max-width: 90%;
     }
 
-    .tagline {
+    .tagline strong {
+        color: blue;
         font-size: 0.95rem;
         margin-top: 12px;
     }
