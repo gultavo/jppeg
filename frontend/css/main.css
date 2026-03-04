@@ -116,7 +116,11 @@ a {
 .tagline {
     margin-top: 16px;
     font-size: clamp(0.9rem, 4vw, 1.25rem);
-    color: #0a1033;
+    background-image: linear-gradient(to right, black 49%, white 49%);
+    -webkit-background-clip: text;
+    background-clip: text;  
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
 }
 
 /* features */
