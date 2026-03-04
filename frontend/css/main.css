@@ -9,6 +9,10 @@
     font-size: large;
 }
 
+#comentario {
+    height: 20vh;
+}
+
 .tagline {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -225,7 +229,7 @@ a {
     display: flex;
 }
 .modal {
-    background: #fff;
+    background: #cacaca;
     border-radius: 36px;
     padding: 24px;
     max-width: 1100px;
@@ -266,7 +270,7 @@ a {
     height: 56px;
     border-radius: 16px;
     border: none;
-    background: #e1e1e1;
+    background: #ffffff;
     margin: 8px 0 18px;
     padding: 0 18px;
 }
